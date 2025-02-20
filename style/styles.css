@@ -59,17 +59,13 @@ body{
 }
 .content{
     margin-top: 5px;
-    /*border-style: solid*/;
-    border-color: blue;
 }
 .main-content{
     margin: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 350px;
-    /*border-style: solid*/;
-    border-color: green;
+
 
     
 }
@@ -77,26 +73,25 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin:5px;
-    /*border-style: solid*/;
-    border-color: yellow;
+    margin:1px;
 }
 #bigImg{
     width: 200px;
 }
 .prepInfo{
-    display: block;
-    margin: 5px;
-    margin-left: 220px;
-    /*border-style: solid*/;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin: 1px;
+
     border-color:rgb(250, 122, 201)
 }
-
+.container-info{
+    display: block;
+    padding-right: 345px;
+}
 .profileImg{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    /*border-style: solid*/;
+    margin: 5px;
     border-color: aqua;
     width: 25%;
 }
@@ -105,25 +100,18 @@ body{
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    width:  150px;
+    height: 300px;
+    width:  250px;
     
 }
 .lblName{
     margin: 10px;
-    /*border-style: solid*/;
+
     border-color: blueviolet;
     width: 25%;
     font-weight: bolder;
 }
-.aboutPrep{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    /*border-style: solid*/;
-    margin: 10px;
-    width: 25%;
-}
+
 .effectPhrase{
     font-style: italic;
 }
@@ -221,8 +209,8 @@ body{
 }
 
 .footer .icon {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     filter: brightness(0) invert(1); /* Torna os ícones brancos */
     transition: transform 0.3s ease, filter 0.3s ease;
   }
