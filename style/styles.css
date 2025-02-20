@@ -1,0 +1,211 @@
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    margin:0;
+    background-color: rgb(230, 230, 230);
+    transition: 1.5s;
+}
+
+.header{
+    transition: 1s;
+    display: flex;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoImg{
+
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+#logoSp{
+    transition: transform 0.5s;
+    width: 60px;  
+}
+#logoSp:hover{
+    transform: translateY(-5px); 
+    transition: 0.5s;
+}
+.nav-list{
+    font-size: smaller;
+    margin:5px;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.list-item{
+    transition: transform 0.5s;
+    font-size: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.list-item a{
+    color: inherit;
+    text-decoration:  none;
+}
+.list-item a:hover{
+    
+    color: red;
+}
+.list-item:hover{
+    color: red;
+    transform: translateY(-5px); 
+    transition: 0.5s;
+}
+.content{
+    margin-top: 5px;
+    /*border-style: solid*/;
+    border-color: blue;
+}
+.main-content{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 350px;
+    /*border-style: solid*/;
+    border-color: green;
+
+    
+}
+.big-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5px;
+    /*border-style: solid*/;
+    border-color: yellow;
+}
+#bigImg{
+    width: 200px;
+}
+.prepInfo{
+    display: block;
+    margin: 5px;
+    margin-left: 220px;
+    /*border-style: solid*/;
+    border-color:rgb(250, 122, 201)
+}
+
+.profileImg{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    /*border-style: solid*/;
+    border-color: aqua;
+    width: 25%;
+}
+.profImg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width:  150px;
+    
+}
+.lblName{
+    margin: 10px;
+    /*border-style: solid*/;
+    border-color: blueviolet;
+    width: 25%;
+    font-weight: bolder;
+}
+.aboutPrep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    /*border-style: solid*/;
+    margin: 10px;
+    width: 25%;
+}
+.effectPhrase{
+    font-style: italic;
+}
+
+.about{
+    margin:50px;
+    transition: 1.5ms;
+    display: flex;
+    justify-content: center;
+    
+}
+.about-title{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.content-about{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 8px;
+    font-size: xx-small;
+}
+.about-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.aboutImg img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
+    transition: transform 0.5s;
+
+}
+.aboutImg img:hover{
+    transform: translateY(-5px); 
+    
+}
+.team-title{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.team{
+    margin:50px;
+    display: flex;
+    justify-content: center;
+}
+.card-team-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap :50px;
+}
+#prfm{
+    color: red;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.cards a{
+    text-decoration: none;
+    color: red;
+    font-size: xx-small;
+}
+.cards:hover{
+    transform: translateY(-5px);
+}
+.profile-card-image{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100px;
+}
