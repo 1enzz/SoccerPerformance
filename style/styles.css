@@ -1,9 +1,15 @@
 body {
     font-family: 'Exo 2', sans-serif;
     margin: 0;
+    padding: 0;
     background-color: rgb(230, 230, 230);
     transition: 1.5s;
-    width: auto;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box; 
 }
 
 .header {
@@ -27,6 +33,7 @@ body {
 #logoSp {
     transition: transform 0.5s;
     width: 60px;
+    max-width: 100%; 
 }
 
 #logoSp:hover {
@@ -44,6 +51,8 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    padding: 0;
+    margin: 0;
 }
 
 .list-item {
@@ -72,13 +81,17 @@ body {
     margin-top: 5px;
     display: block;
     justify-content: center;
+    width: 100%;
+    padding: 0 20px; 
 }
 
 .main-content {
-    margin: 15px;
+    margin: 15px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: auto;
+    gap: 10px; 
+    max-width: 1200px; 
+    width: 100%;
 }
 
 .big-logo {
@@ -90,6 +103,7 @@ body {
 
 #bigImg {
     width: 200px;
+    max-width: 100%; 
 }
 
 .prepInfo {
@@ -97,11 +111,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin: 1px;
+    width: 100%;
 }
 
 .container-info {
     display: block;
     padding-right: 20px;
+    width: 100%;
 }
 
 .profileImg {
@@ -115,6 +131,7 @@ body {
     border-radius: 15px;
     height: 300px;
     width: 250px;
+    max-width: 100%; 
 }
 
 .effectPhrase {
@@ -122,10 +139,13 @@ body {
 }
 
 .about {
-    margin: 50px;
+    margin: 50px auto; 
     transition: 1.5ms;
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px;
 }
 
 .about-title {
@@ -139,17 +159,20 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     font-size: xx-small;
+    width: 100%;
 }
 
 .about-images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2px;
+    width: 100%;
 }
 
 .aboutImg img {
     border-radius: 15px;
     width: 100%;
+    max-width: 100%; 
     transition: transform 0.5s;
 }
 
@@ -164,15 +187,19 @@ body {
 }
 
 .team {
-    margin: 50px;
+    margin: 50px auto; 
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px; 
 }
 
 .card-team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+    width: 100%;
 }
 
 #prfm {
@@ -205,6 +232,7 @@ body {
 .profile-card-image {
     border-radius: 25px;
     width: 100px;
+    max-width: 100%; 
 }
 
 .footer {
